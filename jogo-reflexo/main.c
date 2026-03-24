@@ -91,10 +91,10 @@ int main() {
                     flg_y = 0;
                     int btn_clicado = -1;
 
-                    // Aguarda o clique (Busy Wait na flag da interrupção)
-                    while (flg_r == 0 && flg_g == 0 && flg_y == 0) {
-                        tight_loop_contents();
-                    }
+
+                    
+
+                    while (flg_r == 0 && flg_g == 0 && flg_y == 0);
 
                     if (flg_r) {
                         btn_clicado = led_r;
